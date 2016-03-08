@@ -38,7 +38,7 @@ $(function() {
         it('First click turns the Menu on', function(){
           menuIcon.click(); //this is making checking for the click.
           expect(menuIcon.click).toHaveBeenCalled();
-          expect(bodyElement.className).not.toBe("menu-hidden");//does the menu display when clicked
+          expect(bodyElement.className).toBeUndefined;
         });
       }
         it('Second click closes the Menu', function(){
